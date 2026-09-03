@@ -8,7 +8,7 @@
 #     - O script realizará uma contagem a partir do número inicial até o número final, somando o valor do incremento.
 
 while True: # --> While True loop para garantir que o usuário digite valores válidos
-    try: # --> Try para capturar exceções caso o usuário digite um valor que não seja inteiro
+    try: # --> oq o usuário escreveu e tente treansformar em um número inteiro: 
         # Declarando as variáveis de entrada do usuário:
         inicio = int(input("Digite o valor inicial: "))
         fim = int(input("Digite o valor final: "))
@@ -43,16 +43,14 @@ while True: # --> While True loop para garantir que o usuário digite valores v�
 #-----------------------
 # Calculo da contagem com base nas entradas do usuário:
 #--> decrescente:
-if inicio > fim and passos < 0:
+if inicio > fim and passos < 0: #--> se obedecer a condição de contagem decrescente, o loop será executado
 
     for i in range(inicio, fim-1, passos):
-
         print(i)
 #--> crescente:
-elif inicio < fim and passos > 0:
+elif inicio < fim and passos > 0: # --> se obedecer a condição de contagem crescente, o loop será executado
 
     for i in range(inicio, fim+1, passos):
-
         print(i)
 #--> igualdade:
 elif inicio == fim:
